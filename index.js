@@ -8,16 +8,19 @@ const client = dclib.client()
 
 clear();
 
-console.log(
-  chalk.yellow(
-    figlet.textSync('Discord', { horizontalLayout: 'full' })
-  )
-);
-
+for(var i=0; i<50; i++){
+  console.log("\n");
+}
 
 const inquirer  = require('./lib/inquirer');
 const iq = inquirer.iq()
 const ui = new iq.ui.BottomBar();
+
+ui.log.write(
+  chalk.yellow(
+    figlet.textSync('Discord', { horizontalLayout: 'full' })
+  )
+);
 
 var id;
 const channel = async () => {
