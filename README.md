@@ -1,6 +1,9 @@
 # discord-cli
 A way to use Discord over a CLI using a bot account.
+
 Having trouble installing/using even after reading the whole file below? Friend and then DM R2D2Vader#0693 on Discord for help. 
+
+Do you think this is against the Discord TOS? It's not. Read more [here](https://github.com/Susul-1312/discord-cli#legality).
 
 # Instructions for installation
 
@@ -53,6 +56,10 @@ Install the packages by using the following command:
 
 # Using the tool
 
+Open your CLI and navigate to the tool's folder (the folder which you extracted the files to). 
+
+`cd C:\Users\You\Example\Location` (IDK how that works on Mac)
+
 Run the following command to start the tool:
 `node index.js`
 
@@ -77,3 +84,8 @@ If you give the bot role mentioning perms (via Roles in Discord, Google how to d
 `<@&RoleID>`
 
 For example: `<@&551042366950342666>`
+
+# Legality
+
+Discord's TOS prohibits both self-bots and alternative clients. Both of these involve a program pretending to be a user. This tool is the opposite, because it involves a user pretending to be a bot. There are no restrictions imposed by Discord that prevent a user from chatting via a bot account. Discord knows that you're coding bots to perform whatever task you want to (within reason), so there's no reason why you can't utilise a bot to send messages you type in rather than pre-coded messages.
+
