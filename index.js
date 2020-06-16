@@ -4,7 +4,8 @@ const dclib = require('./lib/discord')
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-const client = dclib.client()
+const client = dclib.client();
+require('dotenv').config();
 
 clear();
 
@@ -51,7 +52,7 @@ client.on('ready', async () => {
    await channel();
    while (active){
     await message();
-    ui.updateBottomBar('#' + client.channels.get(id).name + ' ' + id + ' ');
+    ui.updateBottomBar('#' + client.channels.get(id).name + ' ' + id + ' ' + client.channels.get(id).guild.name);
    }
   process.exit();
 });
@@ -62,7 +63,7 @@ ui.log.write(msg.author.tag + " (" + msg.guild + " in #" + msg.channel.name + "(
 });
 
 
-client.login("your token")
+client.login(process.env.TOKEN)
 
 function sleep(ms) {
   return new Promise((resolve) => {
