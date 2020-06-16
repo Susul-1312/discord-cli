@@ -50,9 +50,7 @@ Open your CLI and navigate to the folder which contains the files from the .zip 
 
 Install the packages by using the following command:
 
-`npm install chalk clear clui figlet inquirer minimist discord.js@11.x` 
-
-*NOTE: Must use Discord.js 11 or it breaks*
+`npm ci` 
 
 # Using the tool
 
