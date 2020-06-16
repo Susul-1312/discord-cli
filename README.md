@@ -1,4 +1,4 @@
-This is the experimental branch, readme might not be up to date
+This is the experimental branch, so README might not be up to date since updates are pushed as they are coded. 
 
 # discord-cli
 A way to use Discord over a CLI using a bot account.
@@ -29,12 +29,17 @@ Give the bot a neat avatar if you wanna from the resulting page.
 
 Look for the word "Token" right under the Username field. Click "Copy" below the token.
 
-Head back to the place you extracted the files to earlier. Open `index.js` in a text editor (Notepad works fine). Look for a place that says `client.login("your token")` and paste your bot's token **inbetween the quotation marks**, to replace the text `your token`. 
+Head back to the place you extracted the files to earlier. Open `.env` in a text editor (Notepad works fine). Look for the place that says `TOKEN=` and paste your bot token to the right of that.
+
+For example: `TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`
+
+(Note that there should be no space between the equals sign and the token. Also note that the Xs do not represent the length or makeup of the actual bot token.)
 
 Head back to Discord Developer Portal. Select the "OAuth2" tab from the left hand navbar. Scroll down to the box marked "Scopes" (one with a lot of check boxes) and check the check box within it that says "bot". 
 
 Scroll down further to the box marked "Bot Permissions" (another one with a lot of check boxes) and select the following boxes:
-```View Channels
+```
+View Channels
 Send Messages
 Embed Links
 Attach Files
@@ -52,9 +57,7 @@ Open your CLI and navigate to the folder which contains the files from the .zip 
 
 Install the packages by using the following command:
 
-`npm install chalk clear clui figlet inquirer minimist discord.js@11.x` 
-
-*NOTE: Must use Discord.js 11 or it breaks*
+`npm ci` 
 
 # Using the tool
 
@@ -65,13 +68,17 @@ Open your CLI and navigate to the tool's folder (the folder which you extracted 
 Run the following command to start the tool:
 `node index.js`
 
-You will be prompted to provide a channel. Please provide a Channel ID. Go to Discord, make sure Developer Mode is enabled, right-click on the channel you want to chat in, and select "Copy ID". Paste this into your CLI (no spaces before or after or the program breaks).
+You will be prompted to provide a channel. Please provide a Channel ID. Go to Discord, make sure Developer Mode is enabled, right-click on the channel you want to chat in, and select "Copy ID". Paste this into your CLI.
 
 You can now send messages, as the bot user, into the selected channel!
 
 All messages readable by the bot will appear in your CLI.
 
 To change channel, enter `ch` or `channel` into the Send Message field and press enter. Then, as prompted, enter the new Channel ID.
+
+To chat with a user via DM, you need to use the User's ID in place of a channel ID. Go to Discord, make sure Developer Mode is enabled, right-click on the user you want to DM, and select "Copy ID". Then follow the same process as for normal channels.
+
+IMPORTANT: If you chat with a user in DMs, you wont be able to access them in later sessions/outside the session without the other user resending them.
 
 To exit, type `q`, `quit`, or `exit`.
 
