@@ -1,7 +1,7 @@
 # discord-cli
 A way to use Discord over a CLI using a bot account.
 
-Having trouble installing/using even after reading the whole file below? Friend and then DM R2D2Vader#0693 on Discord for help. 
+Having trouble installing/using even after reading the whole file below? Friend and then DM R2D2Vader#0693 `(517742819830399000)` on Discord for help. 
 
 Do you think this is against the Discord TOS? It's not. Read more [here](https://github.com/Susul-1312/discord-cli#legality).
 
@@ -77,13 +77,13 @@ To mention users, you'll need their ID.  Go to Discord, make sure Developer Mode
 
 `<@UserID>`
 
-For example: `<@517742819830399000>`
+For example: `<@496947965135683606>`
 
 If you give the bot role mentioning perms (via Roles in Discord, Google how to do that), you can mention roles, using their IDs, like so:
 
 `<@&RoleID>`
 
-For example: `<@&551042366950342666>`
+For example: `<@&669204767716933649>`
 
 # Legality
 
