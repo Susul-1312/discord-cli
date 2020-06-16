@@ -1,5 +1,3 @@
-This is the experimental branch, so README might not be up to date since updates are pushed as they are coded. 
-
 # discord-cli
 A way to use Discord over a CLI using a bot account.
 
