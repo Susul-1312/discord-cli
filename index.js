@@ -1,6 +1,6 @@
 // modules
-const Discord = require("discord.js")
-const dclib = require('./lib/discord')
+const Discord = require("discord.js");
+const dclib = require('./lib/discord');
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
@@ -14,7 +14,7 @@ for(var i=0; i<50; i++){
 }
 
 const inquirer  = require('./lib/inquirer');
-const iq = inquirer.iq()
+const iq = inquirer.iq();
 const ui = new iq.ui.BottomBar();
 
 ui.log.write(
@@ -31,7 +31,7 @@ const channel = async () => {
   ui.log.write("Channel: " + client.channels.get(id).name + " (" + client.channels.get(id).guild.name +")");
   } else {
     if (client.users.get(id)){
-      ui.log.write("User: " + client.users.get(id).tag)
+      ui.log.write("User: " + client.users.get(id).tag);
     } else {
         console.log("This message should never appear, if you see this, I fucked up, exiting");
         process.exit();
@@ -67,11 +67,11 @@ client.on('ready', async () => {
 
 
 client.on('message', msg => {
-  ui.log.write(msg.author.tag + " (" + msg.guild + " in #" + msg.channel.name + "(" + msg.channel.id + ")" + "): " + msg.content)
+  ui.log.write(msg.author.tag + " (" + msg.guild + " in #" + msg.channel.name + "(" + msg.channel.id + ")" + "): " + msg.content);
 });
 
 
-client.login(process.env.TOKEN)
+client.login(process.env.TOKEN);
 
 function sleep(ms) {
   return new Promise((resolve) => {
