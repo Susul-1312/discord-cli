@@ -1,5 +1,5 @@
 {
-  "name": "discord CLI",
+  "name": "discord-CLI",
   "version": "1.0.0",
   "description": "A CLI client for Discord",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
-    "configstore": "^5.0.1",
+    "discord.js": "^11.6.4",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "figlet": "^1.4.0",
     "inquirer": "^7.1.0",
