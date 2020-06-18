@@ -67,7 +67,11 @@ client.on('ready', async () => {
 
 
 client.on('message', msg => {
-  ui.log.write(msg.author.tag + " (" + msg.guild + " in #" + msg.channel.name + "(" + msg.channel.id + ")" + "): " + msg.content);
+  if (msg.guild != null) {
+    ui.log.write(msg.author.tag + " (" + msg.guild + " in #" + msg.channel.name + "(" + msg.channel.id + ")" + "): " + msg.content);
+  } else {
+    ui.log.write(msg.author.tag + " (in DM): " + msg.content);
+  }
 });
 
 
