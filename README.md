@@ -80,6 +80,8 @@ IMPORTANT: If you chat with a user in DMs, you wont be able to access them in la
 
 To exit, type `q`, `quit`, or `exit`.
 
+Do you want to hide the messages coming from a certain channel? Type `mute` into the Send Message field and press enter. Then, as prompted, enter the Channel ID for the channel you wish to mute. You can unmute the channel by following the same process.
+
 To mention users, you'll need their ID.  Go to Discord, make sure Developer Mode is enabled, right-click on the user you want to mention, and select "Copy ID". Then, type the snippet below, replacing UserID with the user's ID:
 
 `<@UserID>`
