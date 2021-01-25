@@ -15,6 +15,8 @@ Download the project as a .zip file from the menu above. Click "Clone or Downloa
 
 Extract the contents of the .zip file to your chosen location.
 
+Note: You can acquire the files via Git if you want. This makes updating easy, as you can simply `git pull` the files. However, we will not discuss these methods in this guide.
+
 ## Discord Bot Setup
 
 Head over to https://discord.com/developers/applications/, sign in with your Discord account, and click "New Application" at the top right.
@@ -27,9 +29,12 @@ Give the bot a neat avatar if you wanna from the resulting page.
 
 Look for the word "Token" right under the Username field. Click "Copy" below the token.
 
-Head back to the place you extracted the files to earlier. Open `.env` in a text editor (Notepad works fine). Look for the place that says `TOKEN=` and paste your bot token to the right of that.
+Head back to the place you extracted the files to earlier. Create a new text file, and name it `.env` (with no file extension). Then, open it in a text editor (Notepad works fine). Write `TOKEN=` on the first line and paste your bot token to the right of that.
 
-For example: `TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`
+For example, the whole file should read: 
+```
+TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
 
 (Note that there should be no space between the equals sign and the token. Also note that the Xs do not represent the length or makeup of the actual bot token.)
 
