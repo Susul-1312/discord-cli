@@ -102,7 +102,16 @@ client.on('message', msg => {
 });
 
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN)
+  .catch(err => {
+    if (err.toString().startsWith("Error: An invalid token was provided.")) {
+      console.log(chalk.red("Please ensure you have created a .env file and set the correct bot token within it. See README.md for installation instructions."));
+    }
+    else if (err.toString().startsWith("Error: Incorrect login details were provided.")) {
+      console.log(chalk.red("The bot token you have set in .env is incorrect. Please reset the token on Discord Developer Portal and use the new one that is generated. See README.md for installation instructions."));
+    }
+    process.exit();
+  });
 
 function sleep(ms) {
   return new Promise((resolve) => {
